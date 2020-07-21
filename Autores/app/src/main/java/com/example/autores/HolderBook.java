@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +20,7 @@ public class HolderBook extends RecyclerView.ViewHolder {
     private TextView txvNumberPages;
     private TextView txvCategory;
     private ImageView imgSmallThumbnail;
+    public  ImageButton btnFavorite;
     public HolderBook(@NonNull View itemView) {
         super(itemView);
         txvTitle = itemView.findViewById(R.id.txv_title);
@@ -26,7 +28,7 @@ public class HolderBook extends RecyclerView.ViewHolder {
         txvNumberPages = itemView.findViewById(R.id.txv_number_pages);
         txvCategory = itemView.findViewById(R.id.txv_category);
         imgSmallThumbnail = itemView.findViewById(R.id.img_photo_book);
-
+        btnFavorite = itemView.findViewById(R.id.btn_favorites);
     }
 
 

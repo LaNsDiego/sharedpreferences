@@ -66,7 +66,6 @@ public class UtilidadesRed {
                 }
             }
         }
-        Log.d(LOG_TAG,libroJSON);
         return libroJSON;
     }
 }

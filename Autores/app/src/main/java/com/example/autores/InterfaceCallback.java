@@ -7,4 +7,8 @@ public interface InterfaceCallback {
     interface Protocol{
         void passListBookGoogle(List<BookGoogle> bookGoogleList);
     }
+
+    interface onClickListener{
+        void addFavorite(BookGoogle book , List<BookGoogle> list);
+    }
 }
